@@ -1,0 +1,333 @@
+@font-face {
+    font-family: "bebas";
+    src: url("res/fonts/BebasNeue-Regular.woff") format('woff');
+}
+
+@font-face {
+    font-family: "bebas";
+    src: url("res/fonts/BebasNeue-Bold.woff") format('woff');
+    font-weight: bold;
+}
+
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+body {
+    background-image: url(res/bg.png);
+    height: 1080px;
+}
+
+#menubar {
+    overflow: visible;
+}
+
+#menubar ul {
+    padding: 0;
+}
+
+.toph {
+    height: 75px;
+}
+
+.bebasf {
+    font-family: bebas;
+}
+
+#menubar li {
+    display: inline-block;
+}
+
+.logo {
+    transform: rotateY(180deg);
+    text-align: center;
+    text-decoration: none;
+    transition: transform .5s;
+    -moz-transition: transform .5s;
+    -ms-transition: transform .5s;
+    -webkit-transition: transform .5s;
+    transition-timing-function: cubic-bezier(0.620, 0.005, 0.000, 1.005);
+    -webkit-transition-timing-function: cubic-bezier(0.620, 0.005, 0.000, 1.005);
+    -moz-transition-timing-function: cubic-bezier(0.620, 0.005, 0.000, 1.005);
+    -ms-transition-timing-function: cubic-bezier(0.620, 0.005, 0.000, 1.005);
+    -webkit-transition-delay: .1s;
+    transition-delay: .1s;
+    -moz-transition-delay: .1s;
+    -ms-transition-delay: .1s;
+}
+
+
+.logo:hover {
+    transform: rotateY(0deg);
+}
+
+.logow {
+    color: rgba(0, 0, 0, 0.62);
+    text-align: center;
+    text-decoration: none;
+    font-size: 3em;
+    transform: translateY(7px);
+    padding-left: 10px;
+    transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition-timing-function: cubic-bezier(0.620, 0.005, 0.000, 1.005);
+    -webkit-transition-timing-function: cubic-bezier(0.620, 0.005, 0.000, 1.005);
+    -moz-transition-timing-function: cubic-bezier(0.620, 0.005, 0.000, 1.005);
+    -ms-transition-timing-function: cubic-bezier(0.620, 0.005, 0.000, 1.005);
+}
+
+.logow:hover {
+    color: rgba(0, 0, 0, 0.88);
+}
+
+#menubar li a {
+    color: rgba(0, 0, 0, 0.62);
+    float: right;
+    text-align: center;
+    padding: 15px 20px 10px 20px;
+    text-decoration: none;
+    font-size: 2em;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transtion: all .5s;
+    -ms-transition: all .5s;
+    transition-timing-function: cubic-bezier(0.620, 0.005, 0.000, 1.005);
+    -webkit-transition-timing-function: cubic-bezier(0.620, 0.005, 0.000, 1.005);
+    -moz-transition-timing-function: cubic-bezier(0.620, 0.005, 0.000, 1.005);
+    -ms-transition-timing-function: cubic-bezier(0.620, 0.005, 0.000, 1.005);
+    text-align: center;
+
+}
+
+#menubar .logo:hover {
+    transform: rotate(9deg);
+}
+
+
+#menubar li a:hover {
+    padding: 15px 20px 10px 100px;
+    color: rgba(0, 0, 0, 0.88);
+    font-size: 2em;
+}
+
+#menubar li a:visited {
+    color: black;
+}
+
+#menubar li a:active {
+    color: darkslategray;
+}
+
+.cont {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.cont .mar {
+    width: 100vw;
+    font-size: 3em;
+    transform: translateY(-9%);
+}
+
+.cont .mar .whatido div a {
+    text-decoration: none;
+    color: black;
+    font-size: .7em;
+    transition: all .5s;
+    -webkit-transition: all .25s;
+    -moz-transition: all .25s;
+    -ms-transition: all .25s;
+    transition-timing-function: cubic-bezier(0.620, 0.005, 0.000, 1.005);
+    -webkit-transition-timing-function: cubic-bezier(0.620, 0.005, 0.000, 1.005);
+    -moz-transition-timing-function: cubic-bezier(0.620, 0.005, 0.000, 1.005);
+    -ms-transition-timing-function: cubic-bezier(0.620, 0.005, 0.000, 1.005);
+}
+
+.cont .mar .whatido div a:hover {
+    letter-spacing: 2px;
+    padding-bottom: 5px;
+
+}
+
+.whatido div {
+    width: 100%;
+}
+
+.unselectable {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.mar ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.mar ul div {
+    font-size: .7em;
+    white-space: nowrap;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0);
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding: 20px;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    transition-timing-function: cubic-bezier(.44, .57, .15, 1.02);
+    -webkit-transition-timing-function: cubic-bezier(.44, .57, .15, 1.02);
+    -moz-transition-timing-function: cubic-bezier(.44, .57, .15, 1.02);
+    -ms-transition-timing-function: cubic-bezier(.44, .57, .15, 1.02);
+}
+
+.no {
+    display: none;
+}
+
+.mar ul div:hover {
+    background-color: rgba(0, 0, 0, 0.62);
+    color: white;
+    width: 10%;
+}
+
+.hell:hover .no {
+    display: inline;
+    color: white;
+}
+
+.hell:hover .list {
+    display: none;
+}
+
+
+.footer {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1px;
+}
+
+.textcent {
+    text-align: center;
+}
+
+.centercontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centerthediv {
+    width: 700px;
+    text-align: center;
+}
+
+#center-contactme {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contactme {
+    width: 70vw;
+    height: 70vh;
+}
+
+#contactme textarea,
+#contactme input {
+
+    width: 100%;
+    min-height: 50px;
+    margin: 2vh;
+    text-align: center;
+    font-family: bebas;
+    font-size: 1.7em;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(0, 0, 0, 0.72);
+    resize: none;
+    border-color: rgba(0, 0, 0, 0.37);
+    background-color: rgba(0, 0, 0, 0.12);
+    outline: none;
+    transition: all .5s;
+    -webkit-transition: all .25s;
+    -moz-transition: all .25s;
+    -ms-transition: all .25s;
+    transition-timing-function: cubic-bezier(0.620, 0.005, 0.000, 1.005);
+    -webkit-transition-timing-function: cubic-bezier(0.620, 0.005, 0.000, 1.005);
+    -moz-transition-timing-function: cubic-bezier(0.620, 0.005, 0.000, 1.005);
+    -ms-transition-timing-function: cubic-bezier(0.620, 0.005, 0.000, 1.005);
+}
+
+#contactme input[type="text"]:focus,
+#contactme input[type="email"]:focus,
+#contactme textarea:focus {
+    background-color: rgba(41, 41, 41, 0.54);
+    color: #ffffff;
+}
+
+#contactme input[type="text"]:hover,
+#contactme input[type="email"]:hover,
+#contactme textarea:hover {
+    background-color: rgba(41, 41, 41, 0.28);
+}
+
+*::placeholder {
+    color: rgba(0, 0, 0, 0.45);
+}
+
+*::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.45);
+}
+
+*::-moz-placeholder {
+    color: rgba(0, 0, 0, 0.45);
+}
+
+*::-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.45);
+}
+
+#contactme input[type=submit] {
+    background-color: rgba(0, 0, 0, 0.64);
+    color: rgba(255, 255, 255, 0.78);
+    transition: all .5s;
+    -webkit-transition: all .25s;
+    -moz-transition: all .25s;
+    -ms-transition: all .25s;
+    transition-timing-function: cubic-bezier(0.620, 0.005, 0.000, 1.005);
+    -webkit-transition-timing-function: cubic-bezier(0.620, 0.005, 0.000, 1.005);
+    -moz-transition-timing-function: cubic-bezier(0.620, 0.005, 0.000, 1.005);
+    -ms-transition-timing-function: cubic-bezier(0.620, 0.005, 0.000, 1.005);
+}
+
+#contactme input[type=submit]:hover,
+#contactme input[type=submit]:focus {
+    background-color: rgba(0, 0, 0, 0.79);
+    color: rgb(255, 255, 255);
+}
