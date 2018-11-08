@@ -30,6 +30,7 @@
 body {
     background-image: url(res/bg.png);
     height: 1080px;
+    min-width: 720px;
 }
 
 #menubar {
@@ -232,6 +233,7 @@ body {
 }
 
 .textcent {
+    min-width: 720px;
     text-align: center;
 }
 
